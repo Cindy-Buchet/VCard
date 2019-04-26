@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet"> 
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
 
     <body>
@@ -22,14 +24,15 @@
                     </ul>
                 </nav>
             
-            <div class="container section">
-
-                <div class="section__gauche">
-                    <h1>Cindy Buchet</h1>
-                        <p>Web developper junior</p>
-                </div>
-                <div class="section__droite">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1>Cindy Buchet</h1>
+                            <p>Web developper junior</p>
+                    </div>
+                    <div class="col-md-6">
                         <img src="images/cindy.jpg" alt="cindy buchet" class="cindy__header">
+                   </div>
                 </div>
                 
             </div>
@@ -37,46 +40,52 @@
 
         <main>
             <section id="propos">
-                <div class="container section">
-                    <div class="section__gauche">
-                        <p>La passion d'internet</p>
-                    </div>
-
-                    <div class="section__droite">
-                        <p>Depuis ma jeune enfance, j’étais passionné par le monde d’Internet. J’aime particulièrement le développement du Web qui m’intrigue depuis plusieurs années. Je me demandais comment nous pourrions créer une page Web au moyen d’un code. C’est pourquoi je m’intéresse au développement Web. Mais sans conception, pas de site Web… Je m'intéresse donc un peu au Web Design.</p>
-                        <p>J’ai encore de la difficulté à penser à l’ergonomie et l’utilisation des interfaces. Mais je vais faire de mon mieux! Je veux combattre cette faiblesse. Je prépare toujours un croquis de mon siteweb avant. J’utilise HTML, CSS, Javascript et bientôt d'autres langages.</p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <span>Une passion, un avenir, un métier.</span>
+                        </div>
+            
+                        <div class="col-md-6">
+                            <p>Depuis ma jeune enfance, j’étais passionné par le monde d’Internet. J’aime particulièrement le développement du Web qui m’intrigue depuis plusieurs années. Je me demandais comment nous pourrions créer une page Web au moyen d’un code. C’est pourquoi je m’intéresse au développement Web. Mais sans conception, pas de site Web… Je m'intéresse donc un peu au Web Design.</p>
+                            <p>J’ai encore de la difficulté à penser à l’ergonomie et l’utilisation des interfaces. Mais je vais faire de mon mieux! Je veux combattre cette faiblesse. Je prépare toujours un croquis de mon siteweb avant. J’utilise HTML, CSS, Javascript et bientôt d'autres langages.</p>
+                        </div>
                     </div>
                 </div>
             </section>
 
             <section id="infos">
-                <div class="container section">
-                    <div class="section__gauche">
-                        <img src="images/cindy.jpg" class="cindy__header" alt="cindy buchet">
-                    </div>
-                        
-                    <div class="section__droite section__deux">
-                        <h2>Mes informations</h2>
+                <div class="container">
+                        <div class="row">
 
-                            <div class="gauche">
-                                <p>Nom</p>
-                                <p>Prénom</p>
-                                <p>Âge</p>
-                                <p>Ville</p>
-                                <p>Etude</p>
-                                <p>Formation</p>
+                            <div class="col-md-6 col-xl-6 col-sm-12">
+                                <img src="images/cindy.jpg" class="cindy__header" alt="cindy buchet">
                             </div>
             
-                            <div class="droite">
-                                <p>Buchet</p>
-                                <p>Cindy</p>
-                                <p>23 ans</p>
-                                <p>Châtelet</p>
-                                <p>Web developper</p>
-                                <p>BeCode</p>
+                            <div class="col-md-6 col-xl-6">
+                                    <h2>Mes informations</h2>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6 col-xl-6 col-6">
+                                            <p>Nom</p>
+                                            <p>Prénom</p>
+                                            <p>Âge</p>
+                                            <p>Ville</p>
+                                            <p>Etude</p>
+                                            <p>Formation</p>
+                                        </div>
+            
+                                        <div class="col-md-6 col-sm-6 col-xl-6 col-6">
+                                            <p>Buchet</p>
+                                            <p>Cindy</p>
+                                            <p>23 ans</p>
+                                            <p>Châtelet</p>
+                                            <p>Web developper</p>
+                                            <p>BeCode</p>
+                                        </div>
+                                    </div>
                             </div>
-
-                    </div>
+            
+                        </div>
                 </div>
             </section>
 
@@ -178,8 +187,66 @@
                 </div>
 
             <section id="portefolio">
-                <div class="container">
-
+                        <div class="container">
+                            <h3 class="title">My projects</h3>
+                            <div class="mesprojets">
+                    
+                            <div class="img__iolce projets col__left">
+                                <a href="http://cindybuchet.be/projets/iolce/" target="_blank"><img src="images/reboot.jpg" alt="Iolce" />
+                                <div class="text">
+                                    <h4 class="title">Iolce</h4>
+                                    <p>Conference of Jérémy Keith "Evaluating technology" translated and explained briefly.</p>
+                                </div></a>
+                            </div>
+                    
+                            <div class="img__montrer projets col__left">
+                                <a href="http://cindybuchet.be/projets/webtypo/montrer/" target="_blank"> <img src="images/reboot.jpg" alt="Montrer" />
+                                <div class="text">
+                                    <h4 class="title">Montrer</h4>
+                                    <p>The essential rules of the typography on a Web site.</p>
+                                </div></a>
+                            </div>
+                    
+                            <div class="img__rux projets col__left">
+                                <a href="http://cindybuchet.be/projets/rethinking-ux/" target="_blank"> <img src="images/reboot.jpg" alt="Rethinking UX" />
+                                <div class="text">
+                                    <h4 class="title">RUX</h4>
+                                    <p>Creation of a new feature of the upload of a video on YouTube.</p>
+                                </div></a>
+                            </div>
+                            
+                            <div class="img__wvs projets col__left">
+                                <a href="http://cindybuchet.be/projets/wvs/" target="_blank"> <img src="images/reboot.jpg" alt="WVS" />
+                                <div class="text">
+                                    <h4 class="title">WVS</h4>
+                                    <p>Animations of a mobile application via the software After Effect.</p>
+                                </div></a>
+                            </div>
+                    
+                            <div class="img__aut projets col__left">
+                                <a href="http://cindybuchet.be/projets/data-play/" target="_blank"> <img src="images/reboot.jpg" alt="Dataplay" />
+                                <div class="text">
+                                    <h4 class="title">Dataplay</h4>
+                                    <p>See in a artistic and real time way the schedule of Namur.</p>
+                                </div></a>
+                            </div>
+                    
+                            <div class="img__aut projets col__left">
+                                <a href="http://cindybuchet.be/projets/reboot-factory/" target="_blank"><img src="images/reboot.jpg" alt="Reboot Factory" />
+                                <div class="text">
+                                    <h4 class="title">Reboot Factory</h4>
+                                    <p>Creation of an application which allows you to prepare your menus of the week.</p>
+                                </div></a>
+                            </div>
+                        </div>
+                    
+                    <div>
+                            <div class="btn__projets">
+                                <a href="http://cindybuchet.be/projets/" target="_blank" class="anim__btn anim">See all my projects</a>
+                               </div>
+                    </div>
+                    
+                        
                 </div>
             </section>
 
@@ -196,5 +263,8 @@
 
         <script type="text/javascript" src="java/java.js"></script>
         <script src="https://code.jquery.com/jquery-3.4.0.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </body>
 </html>
