@@ -14,6 +14,9 @@ h1{
 
 h2{
     font-size: 1.5em;
+    border-bottom: 3px solid black;
+    width: 70%;
+    max-width: 250px;
 }
 
 h3{
@@ -22,6 +25,11 @@ h3{
 
 h1 , h2 {
     font-family: 'Francois One', sans-serif;
+    color: #B8A730;
+}
+
+header p{
+  font-size: 1.5em;
 }
 
 span{
@@ -55,7 +63,8 @@ nav a {
 }
   
 nav a:hover {
-    background: #E65540;
+    background: #B8A730;
+    color: black;
 }
   
 .menu-trigger {
