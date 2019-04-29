@@ -285,3 +285,7 @@ text-align: center;
   -o-transition: opacity .5s ease-in-out;
   -ms-transition: opacity .5s ease-in-out; }
 
+.fa {
+  color: white;
+  width: 20px;
+}
