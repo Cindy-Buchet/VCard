@@ -6,6 +6,7 @@ body{
   line-height: 28px;
   word-wrap: break-word;
   margin: auto;
+  color: white !important;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -17,9 +18,34 @@ h1{
 
 h2{
   font-size: 1.68em !important;
-  border-bottom: 3px solid black;
-  width: 70%;
-  max-width: 250px;
+  text-transform: uppercase;
+}
+
+main hr{
+  width: 120px;
+  border-width: 5px;
+  border-color: #688A55;
+  margin: 0 0 0;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+header hr{
+  width: 250px;
+  border-width: 5px;
+  border-color: #688A55;
+  margin: 0 0 0;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+footer hr{
+  width: 100%;
+  border-width: 3px;
+  border-color: #688A55;
+  margin: 0 0 0;
+  margin-bottom: 20px;
+
 }
 
 h3{
@@ -28,13 +54,11 @@ font-size: 1em;
 
 h1 , h2 , h3 {
   font-family: 'Francois One', sans-serif;
-  color: #B8A730;
+  color: #2F632F
 }
 
 header p{
 font-size: 2.875em;
-border-bottom: 6px solid black;
-max-width: 500px;
 }
 
 header .row{
@@ -65,9 +89,16 @@ margin: auto;
 }
 
 footer{
+  text-align: right;
+}
+
+.container__footer{
+
   max-width: 1200px !important;
   width: 90%;
   margin: auto;
+  padding-top: 25px;
+  padding-bottom: 15px;
 }
 
 .img__twi {
@@ -98,14 +129,14 @@ nav ul li {
 }
 
 nav a {
-  color:#F8ECC2;
+  color:white;
   display:block;
   text-decoration: none;
   padding:10px 30px;
 }
 
 nav a:hover {
-  background: #B8A730;
+  background: #688A55;
   color:white;
   text-decoration: none;
   border-radius: 50px;
@@ -150,12 +181,12 @@ nav a:hover {
   }
 }
 
-header , #infos , #expe{
-  background-image: linear-gradient(to left bottom, #1c3f73, #455f8f, #6a81ab, #90a4c7, #b8c9e4);
+header , #infos , #expe, footer{
+  background-color: #BD623C;
 }
 
 #propos , #savoir , #portefolio , #contact{
-  background-color: #ffffff;
+  background-color: #573E3E;
 }
 
 .infos{
@@ -165,7 +196,7 @@ header , #infos , #expe{
 #timeline {
 list-style: none;
 padding-left: 30px;
-border-left: 8px solid #eee9dc;
+border-left: 8px solid #688A55;
 }
 #timeline  li {
   position: relative;
@@ -188,7 +219,7 @@ top: 50%;
 left: -47px;
 width: 25px ;  
 height: 25px;
-border: 5px solid #eee9dc;
+border: 5px solid #688A55;
 border-radius: 50%;
 display: block;
 position: absolute;
@@ -207,7 +238,7 @@ z-index: 100;
 display: none;
 }
 .circle {
-     background: #f98262; 
+     background: #573E3E; 
   }
 .radio .content p {
     max-height: 200px;
@@ -253,3 +284,4 @@ text-align: center;
   -moz-transition: opacity .5s ease-in-out;
   -o-transition: opacity .5s ease-in-out;
   -ms-transition: opacity .5s ease-in-out; }
+
